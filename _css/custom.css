@@ -1,0 +1,511 @@
+/* Custom Styles for College of Business Landing Page Template */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	/*background-color: #ebebeb;*/
+	background-color: #ffffff;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Lato', sans-serif;
+	/*font-size: 150%;*/
+}
+
+h1 {
+	color: #3b0b3d;
+	margin: 50px 0;
+}
+
+h1 small {
+	/*font-size: 30px;*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	font-weight: 300;
+	color: #33c2df;
+}
+
+h2 {
+	/*font-size: 36px;*/
+	color: #330333;
+}
+
+	.hero-right h2 {
+		color: #ffffff;
+	}
+
+h3 {
+	color: #330033;
+}
+
+.hero h3 {
+	text-transform: uppercase;
+	font-size: 110%;
+	font-weight: 700;
+	color: #33c2df;
+	letter-spacing: 2px;
+}
+
+p {
+	font-weight: 300;
+}
+
+p.rsvp {
+	font-weight: 300;
+	font-style: italic;
+}
+
+/* Button and Labels */
+
+.btn-primary,
+.btn-primary:hover {
+	background-color: #33c2df;
+	border: none;
+	font-weight: bold;
+}
+
+.label-primary {
+	background-color: #ffcc33 !important;
+	color: #303;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* Hero  */
+
+.hero hr {
+	width: 50px;
+	border: 2px solid #ffcc33;
+}
+
+.hero-flex {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.hero-left {
+	/* Background photo hidden due to text flow and z-index. */
+	/*background: url(../_img/model.png) bottom right no-repeat;
+	background-position-x: 110%;
+	min-height: 425px;*/
+	padding: 50px 15px;
+	background-color: #ebebeb;
+
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-o-box-flex: 1;
+	box-flex: 1;
+	-webkit-flex: 1 0 25%;
+	-ms-flex: 1 0 25%;
+	flex: 1 0 25%;
+
+	text-align: center;
+}
+
+	@media only screen and (min-width : 992px) {
+		.hero-left {
+			padding-left: 50px;
+		}
+    }
+
+	.hero-left ul {
+		list-style: none;
+		margin-bottom: 25px;
+		padding: 0;
+		font-size: 125%;
+		font-weight: 300;
+	}
+
+	.hero-left li {
+		border-top: 1px solid #b3a4b3;
+		padding: 15px 0;
+	}
+
+	.hero-left li:first-child {
+		border-top: none;
+	}
+
+.hero-right {
+	background-color: #3b0b3d;
+	color: #fff;
+	text-align: center;
+	min-height: 100%;
+
+	-webkit-box-flex: 0;
+	-moz-box-flex: 0;
+	-o-box-flex: 0;
+	box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+
+	padding: 50px 0;
+}
+
+	.hero-right > h2 {
+		margin-top: 0;
+	}
+
+	.hero-right div.event {
+		color: rgba(255, 255, 255, 0.5);
+		margin: 25px 0;
+		font-size: 150%;
+		font-weight: 300;
+	}
+
+	.hero-right div.webinar {
+		margin: 15px 0;
+	}
+
+@media only screen and (min-width : 992px) {
+		.hero-padding {
+			padding-top: 87px;
+		}
+    }
+
+/* Quote */
+
+.quote-bg {
+	background: #353535 url(../_img/quote-bg.jpg) no-repeat center;
+	height: 400px;
+	border-top: 1px solid #ffcc33;
+}
+
+	.quote p {
+		text-align: center;
+		color: #ffcc33;
+	}
+
+	.quote p:first-child {
+		margin-top: 175px;
+		font-weight: 300;
+		font-style: italic;
+		font-size: 150%;
+	}
+
+	.quote p:nth-child(2) {
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 0;
+	}
+
+	.quote p:nth-child(3) {
+		color: #fff;
+		font-style: italic;
+	}
+
+/* MBA Comparrison Table */
+
+.compare {
+	padding: 50px 0 15px;
+	background-color: #ffffff;
+}
+	.compare h2 {
+		/*margin:0 0 50px 0;*/
+		font-weight: 300 !important;
+		text-align: center;
+	}
+
+	.compare table {
+		margin: 0 auto 55px;
+		text-align: center;
+	}
+
+	.compare table > tbody > tr > td,
+	.compare table > thead > tr > th {
+		border: 1px solid #dddddd;
+	}
+
+	.compare table th {
+		text-align: center;
+	}
+
+	.compare table tbody {
+		width: 100px !important;
+	}
+
+	.compare table thead tr.compare-header th.emba,
+	.compare table thead tr.compare-header th.mba-flex,
+	.compare table thead tr.compare-header th.mba-fast,
+	.compare table thead tr.compare-header th.mba-bridge {
+		border-top: 1px solid #dddddd;
+	}
+
+	.compare table thead tr.compare-header th.emba{
+		background-color: #bdecf5;
+	}
+
+	.compare table thead tr.compare-header th.mba-flex{
+		background-color: #ffdf7c;
+	}
+
+	.compare table thead tr.compare-header th.mba-fast{
+		background-color: #e9e9e9;
+	}
+
+	.compare table thead tr.compare-header th.mba-bridge{
+		background-color: #f4f4f4;
+	}
+
+	.compare table .compare-row-title {
+		background-color: #f1f1f1;
+	}
+		.compare table > tbody > tr > td:first-child {
+			color: rgba(53, 53, 53, 0.7) !important;
+			text-align: right;
+			font-style: italic;
+			padding-right: 25px;
+		}
+
+	.compare table .compare-emba {
+		background-color: #d6f3f9;
+	}
+
+	.compare table .compare-mba-flex {
+		background-color: #ffebad;
+	}
+
+	.compare table .compare-mba-fast {
+		background-color: #f1f1f1;
+	}
+
+	.compare table .compare-mba-bridge {
+		background-color: #f8f8f8;
+	}
+
+	.compare table .compare-cell-hide {
+		background-color: #ffffff;
+		border-left: none;
+	}
+
+/* AACSB */
+
+.aacsb {
+	/*margin: 0 0 75px 0;*/
+}
+
+	@media only screen and (min-width : 992px) {
+			.aacsb {
+				background: no-repeat center/50% url(../_img/AACSB-seal.gif);
+				background-size: contain;
+				padding: 150px 0;
+			}
+	    }
+
+.aacsb-box {
+	padding: 25px 0;
+}
+
+	.aacsb-box img {
+		position: relative;
+		top: 75px;
+		margin-top: -50px;
+	}
+
+	.aacsb-box div {
+		margin: 0 auto;
+	}
+
+		@media only screen and (min-width : 992px) {
+			.aacsb-box div {
+				width: 55%;
+			}
+	    }
+
+/* Nationally Recognized MBA */
+
+.national {
+	margin-bottom: 50px;
+	margin-top: 25px;
+}
+
+	.national p {
+		/*max-width: 55%;
+		margin: 0 auto;*/
+	}
+
+/* Deadlines */
+
+.deadlines {
+	margin-bottom: 50px;
+}
+
+.deadlines,
+.deadlines th {
+	text-align: center;
+}
+
+	.deadlines table {
+		table-layout: fixed;
+		width: 100%;
+	}
+
+	.deadlines table > thead > tr > th {
+		border-bottom: 1px solid #ddd;
+	}
+
+/* Rankings */
+
+.rank-bg {
+	background: #353535 url(../_img/rank-bg.jpg) no-repeat center;
+	min-height: 532px;
+	border-top: 1px solid #ffcc33;
+	border-bottom: 1px solid #fc3;
+}
+
+.rank {
+	margin-bottom: 50px;
+}
+
+	.rank hr {
+		margin-top: 0px;
+		border-top: 15px solid #fc3;
+		width: 200px;
+	}
+
+	.rank p {
+		margin: 40px 0;
+	}
+		.rank hr + p {
+			margin-top: 125px;
+		}
+
+		.rank p:last-child {
+			margin-bottom: 125px;
+		}
+
+	.rank p.ranking {
+		color: #ffffff;
+		font-size: 120%;
+	}
+
+	.rank p.junkie {
+		color: #fc3;
+		font-size: 200%;
+		font-style: italic;
+		font-weight: lighter;
+	}
+
+		@media only screen and (min-width : 992px) {
+			.rank p.junkie {
+				max-width: 75%;
+				margin: 0 auto;
+			}
+	    }
+
+	.rank p.collegeChoice {
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+/* Footer */
+
+.footer {
+	background-color: #303;
+	color: #fff;
+}
+
+	.footer .bold {
+		font-weight: bold;
+	}
+
+	.footer .light {
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+	.footer .large {
+		font-size: 175%;
+	}
+
+	.footer hr {
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+.footer-container {
+	margin-bottom: 75px;
+}
+
+	.footer-container div {
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+/* Responsive Stlyes */
+
+/* Mobile */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	
+  	h1, h2, h3, h4, h5 {
+			font-size: 130%;
+		}
+
+}
+
+/* Tablets */
+
+	@media only screen and (min-width : 768px) {
+		h1, h2, h3, h4, h5 {
+			font-size: 130%;
+		}
+
+		h1 {
+			text-align: right;
+			margin-top: 25px;
+		}
+
+		.hero-left {
+			text-align: left;
+		}
+
+		.hero-left img {
+			float:left;
+		}
+
+		.aacsb {
+			margin-bottom: 50px;
+		}
+
+		.aacsb-box {
+			border: 1px solid #0a67ad;
+			border-radius: 3px;
+		}
+
+		.footer img {
+			/*float: left;*/
+		}
+    }
+
+	@media (min-width: 768px) and (orientation:landscape)  {
+		h1 {
+			text-align: left;
+		}
+		.hero-left img {
+			float:none;
+		}
+	}
+
+/* Desktop */
+
+@media only screen and (min-width : 992px) {
+	h1 {
+		font-size: 200%;
+	}
+	h1 small {
+		font-size: 75%;
+		color: #818285;
+	}
+	h2,h3,h4,h5 {
+		font-size: 175%;
+	}
+}
